@@ -1,0 +1,12 @@
+<h1>Tweets</h1>
+
+  <% @articles.each do |article| %>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= article.user %></h3>
+  </div>
+  <div class="panel-body">
+   <%= article.text %>
+  </div>
+</div>
+  <% end %>
